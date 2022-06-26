@@ -1,0 +1,21 @@
+Dijkstra es conocido como un «personaje» en el mundo de las ciencias de la computación, quizas uno de los más grandes, diría yo. Gran parte de sus artículos y libros no tienen ninguna referencia, pues él se consideraba autónomo. Esta ausencia de referencias fue criticada por muchos investigadores. Años más tarde la mayoría de científicos  computaciones lo citarían en miles de artículos y papers alrededor del mundo.
+Aunque parezca irónico, Dijkstra, uno de los mayores desarrolladores del software de su época, evitó el uso de computadores en su trabajo durante décadas. Cuando, finalmente, sucumbió a la tecnología, únicamente utilizó los ordenadores para enviar correos electrónicos y hacer búsquedas en la red. Dijkstra nunca utilizó un computador para realizar ninguno de sus trabajos, todos ellos fueron realizados a mano.
+Desde una edad muy temprana destacó por su ingenio y elocuencia. Cuando era pequeño le aseguró a su madre que no resolvería ningún problema o cuestión que le ocupará más de cinco líneas de un folio.
+Dijkstra también destacó como escrito de ensayos. En uno de ellos, en tono humorístico describió una empresa ficticia en la que había trabajado como presidente llamada Mathematics. Inc. Esta empresa se había dedicado a comercializar teoremas matemáticos (un paralelismo a lo que estaba ocurriendo con las empresas tecnológicas, las cuales estaban haciendo una abusiva comercialización de los programas que desarrollaban). Al concluir este discurso Dijkstra aseguró que era la empresa más emocionante, y a la vez miserable jamás concebida.
+En múltiples aplicaciones donde se aplican los grafos, es necesario conocer el camino de menor costo entre dos vértices dados:
+
+Distribución de productos a una red de establecimientos comerciales.
+Distribución de correos postales.
+Sea G = (V, A) un grafo dirigido ponderado.
+El problema del camino más corto de un vértice a otro consiste en determinar el camino de menor costo, desde un vértice u a otro vértice v. El costo de un camino es la suma de los costos (pesos) de los arcos que lo conforman.
+Características del algoritmo
+Es un algoritmo greddy.
+Trabaja por etapas, y toma en cada etapa la mejor solución sin considerar consecuencias futuras.
+El óptimo encontrado en una etapa puede modificarse posteriormente si surge una solución mejor.
+Algoritmo de Dijkstra. Inicialización.
+Sea V un conjunto de vértices de un grafo.
+Sea C una matriz de costos de las aristas del grafo, donde en C[u,v] se almacena el costo de la arista entre u y v.
+Sea S un conjunto que contendrá los vértices para los cuales ya se tiene determinado el camino mínimo.
+Sea D un arreglo unidimensional tal que D[v] es el costo del camino mínimo del vértice origen al vértice v.
+Sea P un arreglo unidimensional tal que P[v] es el vértice predecesor de v en el camino mínimo que se tiene construido.
+Sea vinicial el vértice origen. Recordar 
